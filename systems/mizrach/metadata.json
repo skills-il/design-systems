@@ -1,0 +1,13 @@
+{
+  "slug": "mizrach",
+  "name_he": "מזרח",
+  "name_en": "Mizrach",
+  "tagline_he": "קירות לבני סיד של יפו, סלסילות זעפרן. חם בלי לצעוק.",
+  "tagline_en": "Whitewashed Jaffa walls, baskets of saffron. Warm without raising its voice.",
+  "mood": ["cultural", "layered", "hospitable", "calm"],
+  "category": "heritage",
+  "dark_capable": false,
+  "fonts_used": ["Frank Ruhl Libre", "Heebo"],
+  "author": { "name": "Agent Skills Israel", "github": "skills-il" },
+  "version": "0.1.0"
+}

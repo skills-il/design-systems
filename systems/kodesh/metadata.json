@@ -1,0 +1,13 @@
+{
+  "slug": "kodesh",
+  "name_he": "קודש",
+  "name_en": "Kodesh",
+  "tagline_he": "קלף, דיו, אות מרובעת. כתבי יד מהמאה ה-15, בלי קישוט.",
+  "tagline_en": "Parchment, ink, square Hebrew letters. 15th-century manuscripts, unornamented.",
+  "mood": ["sacred", "traditional", "reverent", "still"],
+  "category": "heritage",
+  "dark_capable": false,
+  "fonts_used": ["Frank Ruhl Libre", "Heebo"],
+  "author": { "name": "Agent Skills Israel", "github": "skills-il" },
+  "version": "0.1.0"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "lyl-shabat",
+  "name_he": "ליל שבת",
+  "name_en": "Friday Dusk",
+  "tagline_he": "שולחן ערוך ונרות דועכים. אמבר חם על שזיף עמוק.",
+  "tagline_en": "Set table, candles burning low. Warm amber on deep plum.",
+  "mood": ["intimate", "warm", "ceremonial", "restful"],
+  "category": "lifestyle",
+  "dark_capable": true,
+  "fonts_used": ["Frank Ruhl Libre", "Assistant"],
+  "author": { "name": "Agent Skills Israel", "github": "skills-il" },
+  "version": "0.1.0"
+}

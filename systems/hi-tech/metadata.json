@@ -1,0 +1,13 @@
+{
+  "slug": "hi-tech",
+  "name_he": "הייטק",
+  "name_en": "Hi-Tech",
+  "tagline_he": "מסדרון רוטשילד אחרי החצות. נקי, מדויק, חד.",
+  "tagline_en": "Rothschild after midnight. Clean, exact, sharp.",
+  "mood": ["technical", "ambitious", "minimal", "modern"],
+  "category": "tech",
+  "dark_capable": true,
+  "fonts_used": ["Space Grotesk", "Heebo"],
+  "author": { "name": "Agent Skills Israel", "github": "skills-il" },
+  "version": "0.1.0"
+}

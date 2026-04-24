@@ -1,0 +1,13 @@
+{
+  "slug": "neon",
+  "name_he": "ניאון",
+  "name_en": "Neon",
+  "tagline_he": "שלטי דיזנגוף בשתיים בלילה. שחור עז, מגנטה אחת בלבד.",
+  "tagline_en": "Dizengoff signage at 2am. Pitch black, one magenta only.",
+  "mood": ["nocturnal", "vivid", "rebellious", "urban"],
+  "category": "nightlife",
+  "dark_capable": true,
+  "fonts_used": ["Space Grotesk", "Heebo"],
+  "author": { "name": "Agent Skills Israel", "github": "skills-il" },
+  "version": "0.1.0"
+}
