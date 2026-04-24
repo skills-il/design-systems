@@ -1,0 +1,13 @@
+{
+  "slug": "baniyan",
+  "name_he": "בניין",
+  "name_en": "Bauhaus",
+  "tagline_he": "מודרניזם של העיר הלבנה. מבטא אחד בלבד, זולת זאת שטוחה לגמרי.",
+  "tagline_en": "White City modernism. One accent only, otherwise ruthlessly flat.",
+  "mood": ["civic", "quiet", "authoritative", "editorial"],
+  "category": "editorial",
+  "dark_capable": false,
+  "fonts_used": ["Heebo", "Frank Ruhl Libre", "Public Sans"],
+  "author": { "name": "Agent Skills Israel", "github": "skills-il" },
+  "version": "0.1.0"
+}
