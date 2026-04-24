@@ -7,7 +7,7 @@
   "mood": ["nocturnal", "vivid", "rebellious", "urban"],
   "category": "nightlife",
   "dark_capable": true,
-  "fonts_used": ["Space Grotesk", "Heebo"],
+  "fonts_used": ["Archivo Black", "Heebo"],
   "author": { "name": "Agent Skills Israel", "github": "skills-il" },
   "version": "0.1.0"
 }

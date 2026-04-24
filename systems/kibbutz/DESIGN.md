@@ -7,7 +7,7 @@ colors:
   surface: "#F5EFD8"
   on-surface: "#2D2A1F"
   surface-container: "#DDD0AE"
-  accent: "#4F6B2E"
+  accent: "#3E5524"
   on-accent: "#F5EFD8"
 typography:
   display:
@@ -101,7 +101,7 @@ Earth-stained working palette.
 - **Surface (#F5EFD8)**: wheat cream, the poster paper.
 - **On surface (#2D2A1F)**: ink on paper.
 - **Surface container (#DDD0AE)**: faded poster background tone, for cards and callouts.
-- **Accent (#4F6B2E)**: kibbutz olive — the green of irrigated fields at noon, not a fashion green.
+- **Accent (#3E5524)**: deep kibbutz olive — the green of irrigated fields at noon, deepened so it carries on a button without fading into the cream surround.
 - **On accent (#F5EFD8)**: cream on olive.
 
 The palette is intentionally muted. If you find yourself reaching for a brighter green, you're outside the system — pick a different system instead.

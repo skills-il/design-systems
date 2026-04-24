@@ -7,22 +7,22 @@ colors:
   surface: "#F7F1E3"
   on-surface: "#1F2347"
   surface-container: "#ECE2C8"
-  accent: "#C68A2C"
+  accent: "#E8A22A"
   on-accent: "#1F2347"
 typography:
   display:
-    fontFamily: "Frank Ruhl Libre, Heebo, serif"
+    fontFamily: "David Libre, Heebo, serif"
     fontSize: 60px
     fontWeight: "600"
     lineHeight: 1.1
     letterSpacing: "-0.01em"
   headline-lg:
-    fontFamily: "Frank Ruhl Libre, Heebo, serif"
+    fontFamily: "David Libre, Heebo, serif"
     fontSize: 38px
     fontWeight: "600"
     lineHeight: 1.15
   headline-md:
-    fontFamily: "Frank Ruhl Libre, Heebo, serif"
+    fontFamily: "David Libre, Heebo, serif"
     fontSize: 26px
     fontWeight: "600"
     lineHeight: 1.3
@@ -91,7 +91,7 @@ components:
 
 Mizrach draws from Eastern Mediterranean cultural surfaces — whitewashed Jaffa walls in late afternoon, the indigo of Yemenite embroidery, baskets of dried saffron and sumac at a Friday market. Hospitable without theatrics. Use Mizrach for cultural surfaces, food and dining, hospitality, heritage archives, anything that should feel rooted but contemporary.
 
-Hebrew-first. Frank Ruhl Libre carries display with a calm classical Hebrew serif character; Heebo carries body. Both bilingual.
+Hebrew-first. David Libre carries display — Yanek Iontef's classical Hebrew serif descended from Ladino prayer-book typography fits the system's Mediterranean rootedness. Heebo carries body. Both bilingual.
 
 ## Colors
 
@@ -102,14 +102,14 @@ Three working colors plus surface-container.
 - **Surface (#F7F1E3)**: bone — whitewashed Jaffa wall, slightly warm, never pure white.
 - **On surface (#1F2347)**: indigo on bone.
 - **Surface container (#ECE2C8)**: a deeper bone-cream, for cards and side panels.
-- **Accent (#C68A2C)**: saffron — earthy, warm, never neon. The single attention-getter.
-- **On accent (#1F2347)**: indigo on saffron. The pair is unusual but reads cleanly because the saffron is muted.
+- **Accent (#E8A22A)**: saffron — warm and earthy without slipping into the dim amber territory of dusk systems. The single attention-getter.
+- **On accent (#1F2347)**: indigo on saffron. The pair is unusual but reads cleanly because the saffron stays warm rather than going neon.
 
 The palette is intentionally rooted — neither the indigo nor the saffron is pulled toward digital brightness. Avoid bright orange, bright yellow, or any saturation push.
 
 ## Typography
 
-Frank Ruhl Libre at display weight 600 carries warmth without pretense. Heebo at body keeps reading texture humanist and consistent across scripts. Body line-height runs 1.7 for Hebrew breathing room.
+David Libre at display weight 600 carries warmth without pretense — its Hebrew letterforms have a softer counter than Frank Ruhl Libre, with subtle stroke-contrast that reads as cultural rather than ceremonial. Heebo at body keeps reading texture humanist and consistent across scripts. Body line-height runs 1.7 for Hebrew breathing room.
 
 The system pairs Hebrew and Arabic-influenced typographic mood without using actual Arabic — that boundary belongs to designers fluent in those traditions, not to a general-purpose system.
 
@@ -157,7 +157,7 @@ Hebrew calendar dates appear inline with cultural copy where the context demands
 
 ### Nikkud
 
-Mizrach handles nikkud well — Frank Ruhl Libre carries niqqud beautifully and the bone background reduces eye strain on dense prayer texts. For nikkud-heavy pages override line-height to 1.9.
+Mizrach handles nikkud well — David Libre carries niqqud cleanly and the bone background reduces eye strain on dense prayer texts. For nikkud-heavy pages override line-height to 1.9.
 
 ### Punctuation
 
@@ -165,7 +165,7 @@ Gershayim (״) and geresh (׳) for Hebrew abbreviations. Maqaf (־) inside compo
 
 ### OpenType features
 
-Frank Ruhl Libre's contextual alternates and ligatures are essential — leave `calt` and `liga` on. Recommended for archive metadata: `font-variant-numeric: oldstyle-nums` to keep dates in body prose from disrupting the line.
+David Libre's contextual alternates and ligatures are essential — leave `calt` and `liga` on. Recommended for archive metadata: `font-variant-numeric: oldstyle-nums` to keep dates in body prose from disrupting the line.
 
 ### Accessibility
 

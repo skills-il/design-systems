@@ -1,13 +1,13 @@
 ---
 name: Friday Dusk
-description: Friday-night candlelight, Hebrew-first. Plum primary, candle ivory surface, warm amber accent. Intimate, ceremonial, restful.
+description: Friday-night candlelight, Hebrew-first. Deep plum surface, candle ivory ink, warm amber accent. Intimate, ceremonial, dim.
 colors:
-  primary: "#2A1129"
-  on-primary: "#FBE9C7"
-  surface: "#FBE9C7"
-  on-surface: "#2A1129"
-  surface-container: "#E9D2A6"
-  accent: "#C9783A"
+  primary: "#FBE9C7"
+  on-primary: "#2A1129"
+  surface: "#2A1129"
+  on-surface: "#FBE9C7"
+  surface-container: "#3F1A3D"
+  accent: "#E0935A"
   on-accent: "#2A1129"
 typography:
   display:
@@ -89,23 +89,23 @@ components:
 
 ## Overview
 
-Friday Dusk is the system of the late afternoon, the moment between hurry and rest. Candle ivory surface, deep plum primary, warm amber driver. Use Lyl Shabat for hospitality, family-oriented surfaces, prayer apps, journaling, anything that asks the reader to slow down.
+Friday Dusk is the system of the late evening, the room after the candles are lit. Deep plum surface, candle ivory ink, warm amber driver. Use Lyl Shabat for hospitality, family-oriented surfaces, prayer apps, journaling, anything that asks the reader to slow down. The dark surface is the system's authentic register — Friday night is a dim room, not a sunlit page.
 
 Hebrew-first. Frank Ruhl Libre at display sizes carries a soft, modern Hebrew serif character; Assistant at body keeps the reading texture humanist and warm. Both bilingual.
 
 ## Colors
 
-Candlelight palette, dim and warm.
+Candlelight palette — dim plum room, ivory ink, single warm flame.
 
-- **Primary (#2A1129)**: deep plum, the color of the sky after the candles are lit.
-- **On primary (#FBE9C7)**: candle ivory sitting on the plum.
-- **Surface (#FBE9C7)**: candle ivory, the page itself.
-- **On surface (#2A1129)**: plum text on ivory.
-- **Surface container (#E9D2A6)**: deeper warm cream, for cards and quiet panels.
-- **Accent (#C9783A)**: warm amber — the color of the candle flame seen through a glass holder.
-- **On accent (#2A1129)**: plum on amber. Dark text on the warm fill keeps the candle metaphor while clearing AA contrast.
+- **Primary (#FBE9C7)**: candle ivory, used for ink-level fills (avatars, ghost-button text, headline color).
+- **On primary (#2A1129)**: deep plum sitting on ivory fills.
+- **Surface (#2A1129)**: deep plum, the room. Slightly warm, never blue-black.
+- **On surface (#FBE9C7)**: ivory text on plum. Clears AAA at body-md (~14:1).
+- **Surface container (#3F1A3D)**: lifted plum, for cards and quiet panels — slightly warmer and one shade up from the surface.
+- **Accent (#E0935A)**: warm amber — the candle flame seen through glass. Brightened from the previous dusk-room amber so it lifts off the plum surface and clears AA on body-md text.
+- **On accent (#2A1129)**: plum on amber. The pair holds the candle metaphor while clearing AA.
 
-The palette is intentionally low-saturation. Bright colors pull the reader into action; this system is supposed to settle them.
+The palette stays low-saturation by intent. The amber should read as a flame in a dim room — present but never insistent.
 
 ## Typography
 
@@ -121,17 +121,15 @@ Logical properties everywhere. Lyl Shabat reads beautifully in both directions.
 
 ## Elevation & Depth
 
-A soft warm glow, used sparingly. Cards may carry a `0 4px 24px rgba(42, 17, 41, 0.08)` shadow to suggest candlelight from above. Buttons stay flat. No glass effects.
+A soft warm glow, used sparingly. Cards lift via a tonal step (surface-container vs surface) plus an optional `0 4px 24px rgba(0, 0, 0, 0.4)` to suggest candlelight pooling on a dim table. Buttons stay flat. No glass effects.
 
 ## Shapes
 
 Generous rounding. 12 pixels on inputs and buttons, 24 pixels on cards. The softness is part of the candlelight metaphor; sharp corners read as institutional and break the mood.
 
-## Components
-
-- **Buttons**: primary uses warm amber with ivory text, 24-pixel rounding. Ghost is ivory with plum outline. Hover on primary deepens to plum fill — like the room dimming as the wick burns down.
-- **Cards**: surface-container background, 12-pixel rounding, 24-pixel padding, soft warm shadow. Headers separate from body with whitespace, never with rules.
-- **Inputs**: ivory background, 1-pixel plum border, 12-pixel rounding, 16-pixel body. Focus ring is a 2-pixel amber outline plus a soft `0 0 0 4px rgba(201, 120, 58, 0.16)` halo.
+- **Buttons**: primary uses warm amber with plum text, 24-pixel rounding. Ghost is plum with ivory outline. Hover on primary swaps amber for ivory — the candle steadies and the room reads sharper.
+- **Cards**: lifted-plum (surface-container) background, 12-pixel rounding, 24-pixel padding, soft warm shadow. Headers separate from body with whitespace, never with rules.
+- **Inputs**: lifted-plum background, 1-pixel ivory border at low alpha, 12-pixel rounding, 16-pixel body. Focus ring is a 2-pixel amber outline.
 
 ## Do's and Don'ts
 
@@ -169,4 +167,4 @@ Frank Ruhl Libre's contextual alternates are essential — leave `calt` and `lig
 
 ### Accessibility
 
-All default pairs clear WCAG AA. The plum-on-ivory pair clears AAA at body-md. Be careful with amber on ivory — use it for fills, not for inline text.
+All default pairs clear WCAG AA. The ivory-on-plum pair clears AAA at body-md. The brightened amber clears AA on plum — safe for fills and large display text. Avoid using amber for inline body links; demote those to ivory underlines.

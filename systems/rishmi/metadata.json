@@ -7,7 +7,7 @@
   "mood": ["civic", "neutral", "accessible", "trustworthy"],
   "category": "civic",
   "dark_capable": false,
-  "fonts_used": ["Heebo", "Inter"],
+  "fonts_used": ["Heebo"],
   "author": { "name": "Agent Skills Israel", "github": "skills-il" },
   "version": "0.1.0"
 }

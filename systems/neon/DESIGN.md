@@ -11,21 +11,21 @@ colors:
   on-accent: "#0A0A12"
 typography:
   display:
-    fontFamily: "Space Grotesk, Heebo, sans-serif"
+    fontFamily: "Archivo Black, Heebo, sans-serif"
     fontSize: 72px
-    fontWeight: "700"
+    fontWeight: "400"
     lineHeight: 1.0
     letterSpacing: "-0.03em"
   headline-lg:
-    fontFamily: "Space Grotesk, Heebo, sans-serif"
+    fontFamily: "Archivo Black, Heebo, sans-serif"
     fontSize: 44px
-    fontWeight: "700"
+    fontWeight: "400"
     lineHeight: 1.05
     letterSpacing: "-0.02em"
   headline-md:
-    fontFamily: "Space Grotesk, Heebo, sans-serif"
+    fontFamily: "Heebo, sans-serif"
     fontSize: 28px
-    fontWeight: "500"
+    fontWeight: "700"
     lineHeight: 1.2
     letterSpacing: "-0.01em"
   body-lg:
@@ -44,11 +44,11 @@ typography:
     fontWeight: "400"
     lineHeight: 1.5
   caps:
-    fontFamily: "Space Grotesk, Heebo, sans-serif"
+    fontFamily: "Heebo, sans-serif"
     fontSize: 12px
-    fontWeight: "500"
+    fontWeight: "700"
     lineHeight: 1.2
-    letterSpacing: "0.1em"
+    letterSpacing: "0.12em"
 rounded:
   none: 0px
   sm: 2px
@@ -93,7 +93,7 @@ components:
 
 Neon is the system of Tel Aviv after midnight. The shop signs on Allenby, the bar entrance on Lilienblum, headlights cutting through humidity on Ibn Gabirol. Pitch surface, one electric magenta, sharp grotesque type. Use Neon for nightlife, music, events, club listings, anything that should feel like it stays open after everyone else closes.
 
-Hebrew-first. Space Grotesk handles display with tight tracking and a confident grotesque character; Heebo handles body. The contrast between the two faces — display tight and engineered, body neutral and quiet — is the system's signature.
+Hebrew-first. Archivo Black handles display — the heaviest grotesque on the Google Fonts roster, descended from sign-painter lettering, the closest typographic match to a hand-cut neon tube. Heebo handles body and any sub-display headline. The contrast between the two faces — display impossibly heavy, body neutral and quiet — is the system's signature.
 
 ## Colors
 
@@ -111,9 +111,9 @@ Never introduce a second accent color. Cyan, lime, electric yellow — they all 
 
 ## Typography
 
-Space Grotesk is the load-bearing display face. Tight letterspacing (-0.03em on display) compresses headline mass and gives the system its signage-like aggression. Heebo at body keeps reading rhythm calm — the contrast carries the mood.
+Archivo Black is the load-bearing display face. Single weight (400 maps to its only available cut) compressed by -0.03em tracking on display gives the system its signage-like density — letterforms touch each other the way neon-tube curves do. Heebo carries body and headline-md, keeping mid-prose reading rhythm calm so the display work feels staged.
 
-The system uses 700 sparingly on display only. Body weight stays 400. There is no italic — neon signs do not lean.
+The system has no second display weight. Body weight stays 400. There is no italic — neon signs do not lean.
 
 ## Layout
 
@@ -167,7 +167,7 @@ Hebrew gershayim (״) and geresh (׳); maqaf (־) for compounds. Curly quotes in
 
 ### OpenType features
 
-Space Grotesk's contextual alternates (`calt`) are essential — leave them on. Tabular numerals (`tnum`) are recommended for event listings: enable `font-variant-numeric: tabular-nums` on times and prices so they align in a vertical list.
+Tabular numerals (`tnum`) are recommended for event listings: enable `font-variant-numeric: tabular-nums` on times and prices so they align in a vertical list. Archivo Black ships a single weight without alternates — keep all OpenType features on default.
 
 ### Accessibility
 
