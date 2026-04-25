@@ -2,12 +2,22 @@
   "slug": "rishmi",
   "name_he": "רשמי",
   "name_en": "Official",
-  "tagline_he": "טופס של משרד הפנים שעשו לו עיצוב מחדש. נקי, ברור, נגיש.",
+  "tagline_he": "טופס של משרד הפנים אחרי עיצוב מחדש. נקי, ברור, נגיש.",
   "tagline_en": "A government form, redesigned. Clean, clear, accessible.",
-  "mood": ["civic", "neutral", "accessible", "trustworthy"],
+  "mood": [
+    "civic",
+    "neutral",
+    "accessible",
+    "trustworthy"
+  ],
   "category": "civic",
   "dark_capable": false,
-  "fonts_used": ["Heebo"],
-  "author": { "name": "Agent Skills Israel", "github": "skills-il" },
+  "fonts_used": [
+    "Heebo"
+  ],
+  "author": {
+    "name": "Agent Skills Israel",
+    "github": "skills-il"
+  },
   "version": "0.1.0"
 }

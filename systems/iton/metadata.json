@@ -2,12 +2,23 @@
   "slug": "iton",
   "name_he": "עיתון",
   "name_en": "Broadsheet",
-  "tagline_he": "עמוד ראשון של בוקר חמישי. עמודות, דיו, בלי דרמה.",
+  "tagline_he": "עמוד ראשון של 'הארץ' בבוקר חמישי. עמודות, דיו, בלי קישוטים.",
   "tagline_en": "Thursday morning front page. Columns, ink, no drama.",
-  "mood": ["editorial", "literary", "considered", "traditional"],
+  "mood": [
+    "editorial",
+    "literary",
+    "considered",
+    "traditional"
+  ],
   "category": "editorial",
   "dark_capable": false,
-  "fonts_used": ["Alef", "Heebo"],
-  "author": { "name": "Agent Skills Israel", "github": "skills-il" },
+  "fonts_used": [
+    "Alef",
+    "Heebo"
+  ],
+  "author": {
+    "name": "Agent Skills Israel",
+    "github": "skills-il"
+  },
   "version": "0.1.0"
 }

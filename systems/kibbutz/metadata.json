@@ -2,12 +2,23 @@
   "slug": "kibbutz",
   "name_he": "קיבוץ",
   "name_en": "Kibbutz",
-  "tagline_he": "פלקטים של בצלאל בשנות החמישים. רעיון משותף, צבעים יבשים, דפוס יד.",
+  "tagline_he": "פלקט של בצלאל משנות החמישים. רעיון קולקטיבי, אדמה יבשה, אות מודפסת ביד.",
   "tagline_en": "Bezalel posters from the 1950s. Shared idea, dry palette, hand-set type.",
-  "mood": ["nostalgic", "collective", "earthy", "honest"],
+  "mood": [
+    "nostalgic",
+    "collective",
+    "earthy",
+    "honest"
+  ],
   "category": "heritage",
   "dark_capable": false,
-  "fonts_used": ["Assistant", "Heebo"],
-  "author": { "name": "Agent Skills Israel", "github": "skills-il" },
+  "fonts_used": [
+    "Assistant",
+    "Heebo"
+  ],
+  "author": {
+    "name": "Agent Skills Israel",
+    "github": "skills-il"
+  },
   "version": "0.1.0"
 }

@@ -2,12 +2,23 @@
   "slug": "shuk",
   "name_he": "שוק",
   "name_en": "Shuk",
-  "tagline_he": "צבעי השוק לפני הסגירה. חם, רועש, גלוי לכול.",
+  "tagline_he": "השוק לפני הסגירה. חם, רועש, פתוח לכל.",
   "tagline_en": "Carmel Market light before closing. Warm, loud, unguarded.",
-  "mood": ["warm", "vibrant", "social", "expressive"],
+  "mood": [
+    "warm",
+    "vibrant",
+    "social",
+    "expressive"
+  ],
   "category": "lifestyle",
   "dark_capable": false,
-  "fonts_used": ["Rubik", "Heebo"],
-  "author": { "name": "Agent Skills Israel", "github": "skills-il" },
+  "fonts_used": [
+    "Rubik",
+    "Heebo"
+  ],
+  "author": {
+    "name": "Agent Skills Israel",
+    "github": "skills-il"
+  },
   "version": "0.1.0"
 }
