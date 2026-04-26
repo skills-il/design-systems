@@ -1,5 +1,6 @@
 ---
 name: Hi-Tech
+version: 0.2.1
 description: Rothschild high-rise minimalism, Hebrew-first. White surface, deep navy ink, electric blue accent. Sharp, ambitious, technical.
 colors:
   primary: "#0A1A2F"
@@ -7,10 +8,18 @@ colors:
   surface: "#FFFFFF"
   on-surface: "#0A1A2F"
   surface-container: "#F4F6FA"
-  accent: "#2456E8"
-  on-accent: "#FFFFFF"
+  tertiary: "#2456E8"
+  on-tertiary: "#FFFFFF"
+colors-dark:
+  on-primary: "#0A1A2F"
+  on-surface: "#E8EEF6"
+  on-tertiary: "#0A1A2F"
+  primary: "#E8EEF6"
+  surface: "#0A1A2F"
+  surface-container: "#0F2440"
+  tertiary: "#5C8AFF"
 typography:
-  display:
+  headline-display:
     fontFamily: "Space Grotesk, Heebo, sans-serif"
     fontSize: 64px
     fontWeight: "700"
@@ -43,7 +52,7 @@ typography:
     fontSize: 13px
     fontWeight: "400"
     lineHeight: 1.5
-  caps:
+  label-sm:
     fontFamily: "Space Grotesk, Heebo, sans-serif"
     fontSize: 12px
     fontWeight: "500"
@@ -63,8 +72,8 @@ spacing:
   2xl: 64px
 components:
   button-primary:
-    backgroundColor: "{colors.accent}"
-    textColor: "{colors.on-accent}"
+    backgroundColor: "{colors.tertiary}"
+    textColor: "{colors.on-tertiary}"
     typography: "{typography.body-md}"
     rounded: "{rounded.md}"
     padding: 10px 18px
@@ -111,7 +120,7 @@ Never introduce a green "success" or yellow "warning" without aligning their sat
 
 ## Typography
 
-Space Grotesk handles every display and headline size. Its tight letterforms and slightly tucked geometry give the system a contemporary technical feel without going retro. Heebo handles body — same family used by skills-il at large, so Hebrew metrics match site chrome.
+Space Grotesk handles every display and headline size. Its tight letterforms and slightly tucked geometry give the system a contemporary technical feel without going retro. Heebo handles body, same family used by skills-il at large, so Hebrew metrics match site chrome.
 
 Display tracking is tightened (-0.025em) to compress headline mass; body stays at default tracking so dense paragraphs remain readable.
 
@@ -127,7 +136,7 @@ Minimal shadows. Cards rest on `surface-container` instead of casting a shadow o
 
 ## Shapes
 
-Restrained rounding. 8 pixel radius on inputs and buttons, 12 pixels on cards. Avatars are circular. Status badges are full pill rounding (999px). The system stays away from very sharp 0-radius shapes — those read as 90s utilitarian against the navy.
+Restrained rounding. 8 pixel radius on inputs and buttons, 12 pixels on cards. Avatars are circular. Status badges are full pill rounding (999px). The system stays away from very sharp 0-radius shapes, those read as 90s utilitarian against the navy.
 
 ## Components
 
@@ -167,8 +176,133 @@ Hebrew copy uses gershayim (״) and geresh (׳); maqaf (־) for Hebrew compounds
 
 ### OpenType features
 
-Space Grotesk's contextual alternates (`calt`) are on by default — do not disable. Tabular numerals (`tnum`) are recommended for dashboards: enable via `font-variant-numeric: tabular-nums` on numeric columns.
+Space Grotesk's contextual alternates (`calt`) are on by default, do not disable. Tabular numerals (`tnum`) are recommended for dashboards: enable via `font-variant-numeric: tabular-nums` on numeric columns.
 
 ### Accessibility
 
-The default pairs all clear WCAG AA. Be careful with the cool gray-blue surface-container on white — large text only at low contrast pairs, never body-sm.
+The default pairs all clear WCAG AA. Be careful with the cool gray-blue surface-container on white, large text only at low contrast pairs, never body-sm.
+
+## Tokens
+
+Machine-readable token block. Reference values via the curly-brace alias
+syntax (e.g. `{colors.primary}`); resolve recursively if your build step
+supports it. All hex values are sRGB.
+
+```yaml
+colors:
+  primary: "#0A1A2F"
+  surface: "#FFFFFF"
+  tertiary: "#2456E8"
+  on-primary: "#FFFFFF"
+  on-surface: "#0A1A2F"
+  on-tertiary: "#FFFFFF"
+  surface-container: "#F4F6FA"
+colors-dark:
+  primary: "#E8EEF6"
+  surface: "#0A1A2F"
+  tertiary: "#5C8AFF"
+  on-primary: "#0A1A2F"
+  on-surface: "#E8EEF6"
+  on-tertiary: "#0A1A2F"
+  surface-container: "#0F2440"
+typography:
+  body-lg:
+    fontSize: 17px
+    fontFamily: Heebo, sans-serif
+    fontWeight: 400
+    lineHeight: 1.55
+  body-md:
+    fontSize: 15px
+    fontFamily: Heebo, sans-serif
+    fontWeight: 400
+    lineHeight: 1.55
+  body-sm:
+    fontSize: 13px
+    fontFamily: Heebo, sans-serif
+    fontWeight: 400
+    lineHeight: 1.5
+  label-sm:
+    fontSize: 12px
+    fontFamily: Space Grotesk, Heebo, sans-serif
+    fontWeight: 500
+    lineHeight: 1.2
+    letterSpacing: 0.08em
+  headline-lg:
+    fontSize: 40px
+    fontFamily: Space Grotesk, Heebo, sans-serif
+    fontWeight: 700
+    lineHeight: 1.1
+    letterSpacing: -0.02em
+  headline-md:
+    fontSize: 28px
+    fontFamily: Space Grotesk, Heebo, sans-serif
+    fontWeight: 500
+    lineHeight: 1.2
+    letterSpacing: -0.01em
+  headline-display:
+    fontSize: 64px
+    fontFamily: Space Grotesk, Heebo, sans-serif
+    fontWeight: 700
+    lineHeight: 1.05
+    letterSpacing: -0.025em
+spacing:
+  lg: 22px
+  md: 14px
+  sm: 8px
+  xl: 36px
+  xs: 4px
+  2xl: 56px
+rounded:
+  lg: 8px
+  md: 4px
+  sm: 2px
+  none: 0px
+components:
+  card:
+    padding: "{spacing.lg}"
+    rounded: "{rounded.md}"
+    elevation: 0 1px 0 rgba(0,0,0,0.04)
+    textColor: "{colors.on-surface}"
+    borderWidth: 1px
+    backgroundColor: "{colors.surface-container}"
+  input:
+    padding: 10px 14px
+    rounded: "{rounded.md}"
+    textColor: "{colors.on-surface}"
+    backgroundColor: "{colors.surface}"
+  button-ghost:
+    padding: 10px 18px
+    rounded: "{rounded.md}"
+    textColor: "{colors.on-surface}"
+    typography: "{typography.body-md}"
+    backgroundColor: "{colors.surface}"
+  button-primary:
+    padding: 10px 20px
+    rounded: 2px
+    textColor: "{colors.on-primary}"
+    backgroundColor: "{colors.primary}"
+  button-primary-hover:
+    textColor: "{colors.on-primary}"
+    backgroundColor: "{colors.primary}"
+```
+
+## Examples
+
+Reference snippets in the system's voice. Use these to calibrate brand
+tone in headlines, CTAs, and error states; do not copy verbatim into
+production surfaces.
+
+### Hero
+
+- **HE**: מהונדס, לא מקושט.
+- **EN**: Engineered, not decorated.
+
+### Primary CTA
+
+- **HE**: התחילו בחינם
+- **EN**: Start free
+
+### Error message
+
+- **HE**: החיבור נדחה (סטטוס 401). היכנסו מחדש.
+- **EN**: Connection refused (status 401). Re-authenticate.

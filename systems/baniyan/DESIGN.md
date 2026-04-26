@@ -1,5 +1,6 @@
 ---
 name: Bauhaus
+version: 0.2.1
 description: White City modernism, Hebrew-first. Cream paper, black ink, single red ochre accent. Authoritative, quiet, civic.
 colors:
   primary: "#1A1A18"
@@ -7,10 +8,18 @@ colors:
   surface: "#F3EEE3"
   on-surface: "#1A1A18"
   surface-container: "#EAE3D2"
-  accent: "#A13A2A"
-  on-accent: "#F3EEE3"
+  tertiary: "#A13A2A"
+  on-tertiary: "#F3EEE3"
+colors-dark:
+  on-primary: "#1A1A18"
+  on-surface: "#F3EEE3"
+  on-tertiary: "#F3EEE3"
+  primary: "#F3EEE3"
+  surface: "#1A1A18"
+  surface-container: "#25231F"
+  tertiary: "#C44B36"
 typography:
-  display:
+  headline-display:
     fontFamily: "Frank Ruhl Libre, Public Sans, serif"
     fontSize: 72px
     fontWeight: "700"
@@ -42,7 +51,7 @@ typography:
     fontSize: 14px
     fontWeight: "400"
     lineHeight: 1.55
-  caps:
+  label-sm:
     fontFamily: "Heebo, sans-serif"
     fontSize: 12px
     fontWeight: "600"
@@ -61,8 +70,8 @@ spacing:
   2xl: 64px
 components:
   button-primary:
-    backgroundColor: "{colors.accent}"
-    textColor: "{colors.on-accent}"
+    backgroundColor: "{colors.tertiary}"
+    textColor: "{colors.on-tertiary}"
     typography: "{typography.body-md}"
     rounded: "{rounded.sm}"
     padding: 12px 20px
@@ -118,7 +127,7 @@ Leading runs generous (1.55 to 1.6 for body) to accommodate Hebrew descenders wi
 
 ## Layout
 
-Respect the grid. 8 point spacing scale, container padding 24 pixels on mobile, 64 on desktop. Start-rail navigation on desktop when the surface is a dashboard (right rail in RTL, left rail in LTR); stacked otherwise. Use logical properties (`padding-inline-start`, `inset-inline-end`) throughout — the system must render identically when `dir` flips.
+Respect the grid. 8 point spacing scale, container padding 24 pixels on mobile, 64 on desktop. Start-rail navigation on desktop when the surface is a dashboard (right rail in RTL, left rail in LTR); stacked otherwise. Use logical properties (`padding-inline-start`, `inset-inline-end`) throughout, the system must render identically when `dir` flips.
 
 ## Elevation & Depth
 
@@ -150,7 +159,7 @@ Bauhaus is designed for Hebrew-first and bilingual interfaces. When generating U
 
 ### RTL layout
 
-Set `dir="rtl"` on `<html>` for Hebrew pages. Use CSS logical properties exclusively: `padding-inline-start` instead of `padding-left`, `margin-inline-end` instead of `margin-right`, `inset-inline-start` instead of `left`. Tailwind equivalents: `ps-*`, `me-*`, `start-*`. Never hardcode left/right — the system must flip cleanly.
+Set `dir="rtl"` on `<html>` for Hebrew pages. Use CSS logical properties exclusively: `padding-inline-start` instead of `padding-left`, `margin-inline-end` instead of `margin-right`, `inset-inline-start` instead of `left`. Tailwind equivalents: `ps-*`, `me-*`, `start-*`. Never hardcode left/right, the system must flip cleanly.
 
 ### Digits inside RTL flow
 
@@ -171,3 +180,127 @@ No special features required. Heebo and Frank Ruhl Libre both enable their defau
 ### Accessibility
 
 Maintain 4.5:1 contrast on all text regardless of script. The palette already meets AA on every component pair; avoid tinting text below `on-surface` or `on-primary` without re-running a contrast check.
+
+## Tokens
+
+Machine-readable token block. Reference values via the curly-brace alias
+syntax (e.g. `{colors.primary}`); resolve recursively if your build step
+supports it. All hex values are sRGB.
+
+```yaml
+colors:
+  primary: "#1A1A18"
+  surface: "#F3EEE3"
+  tertiary: "#A13A2A"
+  on-primary: "#F3EEE3"
+  on-surface: "#1A1A18"
+  on-tertiary: "#F3EEE3"
+  surface-container: "#EAE3D2"
+colors-dark:
+  primary: "#F3EEE3"
+  surface: "#1A1A18"
+  tertiary: "#C44B36"
+  on-primary: "#1A1A18"
+  on-surface: "#F3EEE3"
+  on-tertiary: "#F3EEE3"
+  surface-container: "#25231F"
+typography:
+  body-lg:
+    fontSize: 18px
+    fontFamily: Heebo, sans-serif
+    fontWeight: 400
+    lineHeight: 1.55
+  body-md:
+    fontSize: 16px
+    fontFamily: Heebo, sans-serif
+    fontWeight: 400
+    lineHeight: 1.6
+  body-sm:
+    fontSize: 14px
+    fontFamily: Heebo, sans-serif
+    fontWeight: 400
+    lineHeight: 1.55
+  label-sm:
+    fontSize: 12px
+    fontFamily: Heebo, sans-serif
+    fontWeight: 600
+    lineHeight: 1.2
+    letterSpacing: 0.12em
+  headline-lg:
+    fontSize: 48px
+    fontFamily: Frank Ruhl Libre, Public Sans, serif
+    fontWeight: 700
+    lineHeight: 1.1
+    letterSpacing: -0.01em
+  headline-md:
+    fontSize: 32px
+    fontFamily: Frank Ruhl Libre, Public Sans, serif
+    fontWeight: 600
+    lineHeight: 1.2
+  headline-display:
+    fontSize: 72px
+    fontFamily: Frank Ruhl Libre, Public Sans, serif
+    fontWeight: 700
+    lineHeight: 1.05
+    letterSpacing: -0.02em
+spacing:
+  lg: 20px
+  md: 12px
+  sm: 8px
+  xl: 32px
+  xs: 4px
+  2xl: 56px
+rounded:
+  lg: 2px
+  md: 0px
+  sm: 0px
+  none: 0px
+components:
+  card:
+    padding: "{spacing.lg}"
+    rounded: 0px
+    elevation: none
+    textColor: "{colors.on-surface}"
+    borderWidth: 1.5px
+    backgroundColor: "{colors.surface-container}"
+  input:
+    padding: 10px 14px
+    rounded: "{rounded.sm}"
+    textColor: "{colors.on-surface}"
+    backgroundColor: "{colors.surface}"
+  button-ghost:
+    padding: 12px 20px
+    rounded: "{rounded.sm}"
+    textColor: "{colors.on-surface}"
+    typography: "{typography.body-md}"
+    backgroundColor: "{colors.surface}"
+  button-primary:
+    padding: 10px 18px
+    rounded: 0px
+    textColor: "{colors.on-primary}"
+    backgroundColor: "{colors.primary}"
+  button-primary-hover:
+    textColor: "{colors.on-primary}"
+    backgroundColor: "{colors.primary}"
+```
+
+## Examples
+
+Reference snippets in the system's voice. Use these to calibrate brand
+tone in headlines, CTAs, and error states; do not copy verbatim into
+production surfaces.
+
+### Hero
+
+- **HE**: בהירות אזרחית. צבע אחד, בלי קישוטים.
+- **EN**: Civic clarity. One color, no decoration.
+
+### Primary CTA
+
+- **HE**: המשך
+- **EN**: Continue
+
+### Error message
+
+- **HE**: שדה חובה. אנא מלאו אותו.
+- **EN**: Required field. Please fill it in.

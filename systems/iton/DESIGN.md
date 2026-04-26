@@ -1,5 +1,6 @@
 ---
 name: Broadsheet
+version: 0.2.1
 description: Hebrew newspaper editorial gravity. Newsprint cream, deep ink, indigo signature accent. Columnar, considered, literary.
 colors:
   primary: "#14171F"
@@ -7,10 +8,18 @@ colors:
   surface: "#F8F4EC"
   on-surface: "#14171F"
   surface-container: "#ECE5D5"
-  accent: "#2C4F8F"
-  on-accent: "#F8F4EC"
+  tertiary: "#2C4F8F"
+  on-tertiary: "#F8F4EC"
+colors-dark:
+  on-primary: "#14171F"
+  on-surface: "#F8F4EC"
+  on-tertiary: "#F8F4EC"
+  primary: "#F8F4EC"
+  surface: "#14171F"
+  surface-container: "#1F2330"
+  tertiary: "#5478C8"
 typography:
-  display:
+  headline-display:
     fontFamily: "Alef, Heebo, sans-serif"
     fontSize: 60px
     fontWeight: "700"
@@ -41,7 +50,7 @@ typography:
     fontSize: 14px
     fontWeight: "400"
     lineHeight: 1.6
-  caps:
+  label-sm:
     fontFamily: "Heebo, sans-serif"
     fontSize: 11px
     fontWeight: "700"
@@ -60,8 +69,8 @@ spacing:
   2xl: 64px
 components:
   button-primary:
-    backgroundColor: "{colors.accent}"
-    textColor: "{colors.on-accent}"
+    backgroundColor: "{colors.tertiary}"
+    textColor: "{colors.on-tertiary}"
     typography: "{typography.body-md}"
     rounded: "{rounded.none}"
     padding: 12px 22px
@@ -88,7 +97,7 @@ components:
 
 ## Overview
 
-Broadsheet draws from the printed Hebrew newspaper — Haaretz front pages, the cultural supplement on a Friday morning, the smell of newsprint and a third cup of coffee. Use Iton for long-form content surfaces: editorials, journals, knowledge bases, archives, anything that wants to be read slowly and trusted.
+Broadsheet draws from the printed Hebrew newspaper, Haaretz front pages, the cultural supplement on a Friday morning, the smell of newsprint and a third cup of coffee. Use Iton for long-form content surfaces: editorials, journals, knowledge bases, archives, anything that wants to be read slowly and trusted.
 
 Hebrew-first by construction. Alef, a quietly classical Hebrew face, carries every display and headline size. Heebo carries body. Both ship matching Latin glyphs, so a citation in English doesn't break the column.
 
@@ -108,15 +117,15 @@ The accent is a deep, dignified blue, never a bright digital one. Iton is not tr
 
 ## Typography
 
-Alef is the workhorse for display. It reads as a calm, considered Hebrew face — book-like rather than monumental. Heebo handles every body size with generous line-height (1.65 to 1.7) so long-form columns breathe.
+Alef is the workhorse for display. It reads as a calm, considered Hebrew face, book-like rather than monumental. Heebo handles every body size with generous line-height (1.65 to 1.7) so long-form columns breathe.
 
-Display weight stays at 700; the system never goes thinner than 400 on body. Iton avoids hairline weights — they read as cosmetic rather than considered.
+Display weight stays at 700; the system never goes thinner than 400 on body. Iton avoids hairline weights, they read as cosmetic rather than considered.
 
 ## Layout
 
 Columnar. 8 point base, container padding 24 on mobile, 80 on desktop. Long-form content is constrained to a 65-character measure (roughly 720px at 18px body); never let articles run edge-to-edge. Sidebar pull quotes use surface-container with a 2-pixel accent border-inline-start.
 
-Logical properties everywhere — the columns flip cleanly between RTL and LTR.
+Logical properties everywhere, the columns flip cleanly between RTL and LTR.
 
 ## Elevation & Depth
 
@@ -124,7 +133,7 @@ None. Iton is paper, and paper does not float. Distinguish surfaces with the cre
 
 ## Shapes
 
-Sharp. Buttons and inputs are 0-radius rectangles. Cards round to 2 pixels — barely perceptible, just enough to read as digital. Avatars stay circular.
+Sharp. Buttons and inputs are 0-radius rectangles. Cards round to 2 pixels, barely perceptible, just enough to read as digital. Avatars stay circular.
 
 ## Components
 
@@ -156,7 +165,7 @@ Hebrew dates use Hebrew calendar where the editorial context demands it (heritag
 
 ### Nikkud
 
-Iton handles nikkud well at body sizes — Heebo's nikkud metrics are conservative. For poetry and religious citations, override line-height to 1.95 to give marks visible breathing room.
+Iton handles nikkud well at body sizes, Heebo's nikkud metrics are conservative. For poetry and religious citations, override line-height to 1.95 to give marks visible breathing room.
 
 ### Punctuation
 
@@ -169,3 +178,126 @@ Heebo and Alef enable default ligatures and contextual alternates. Recommended f
 ### Accessibility
 
 All default pairs clear WCAG AA at body and AAA at body-lg. The cream paper background reduces contrast slightly compared to pure white but stays above 4.5:1 with the deep ink. Never tint body text below `on-surface`.
+
+## Tokens
+
+Machine-readable token block. Reference values via the curly-brace alias
+syntax (e.g. `{colors.primary}`); resolve recursively if your build step
+supports it. All hex values are sRGB.
+
+```yaml
+colors:
+  primary: "#14171F"
+  surface: "#F8F4EC"
+  tertiary: "#2C4F8F"
+  on-primary: "#F8F4EC"
+  on-surface: "#14171F"
+  on-tertiary: "#F8F4EC"
+  surface-container: "#ECE5D5"
+colors-dark:
+  primary: "#F8F4EC"
+  surface: "#14171F"
+  tertiary: "#5478C8"
+  on-primary: "#14171F"
+  on-surface: "#F8F4EC"
+  on-tertiary: "#F8F4EC"
+  surface-container: "#1F2330"
+typography:
+  body-lg:
+    fontSize: 18px
+    fontFamily: Heebo, sans-serif
+    fontWeight: 400
+    lineHeight: 1.65
+  body-md:
+    fontSize: 16px
+    fontFamily: Heebo, sans-serif
+    fontWeight: 400
+    lineHeight: 1.7
+  body-sm:
+    fontSize: 14px
+    fontFamily: Heebo, sans-serif
+    fontWeight: 400
+    lineHeight: 1.6
+  label-sm:
+    fontSize: 11px
+    fontFamily: Heebo, sans-serif
+    fontWeight: 700
+    lineHeight: 1.2
+    letterSpacing: 0.14em
+  headline-lg:
+    fontSize: 40px
+    fontFamily: Alef, Heebo, sans-serif
+    fontWeight: 700
+    lineHeight: 1.15
+  headline-md:
+    fontSize: 26px
+    fontFamily: Alef, Heebo, sans-serif
+    fontWeight: 700
+    lineHeight: 1.25
+  headline-display:
+    fontSize: 60px
+    fontFamily: Alef, Heebo, sans-serif
+    fontWeight: 700
+    lineHeight: 1.1
+    letterSpacing: -0.01em
+spacing:
+  lg: 32px
+  md: 20px
+  sm: 8px
+  xl: 56px
+  xs: 4px
+  2xl: 96px
+rounded:
+  lg: 2px
+  md: 0px
+  sm: 0px
+  none: 0px
+components:
+  card:
+    padding: "{spacing.lg}"
+    rounded: 0px
+    elevation: none
+    textColor: "{colors.on-surface}"
+    borderWidth: 0px
+    backgroundColor: "{colors.surface}"
+  input:
+    padding: 10px 14px
+    rounded: "{rounded.none}"
+    textColor: "{colors.on-surface}"
+    backgroundColor: "{colors.surface}"
+  button-ghost:
+    padding: 12px 22px
+    rounded: "{rounded.none}"
+    textColor: "{colors.on-surface}"
+    typography: "{typography.body-md}"
+    backgroundColor: "{colors.surface}"
+  button-primary:
+    padding: 12px 24px
+    rounded: 0px
+    textColor: "{colors.on-primary}"
+    backgroundColor: "{colors.primary}"
+  button-primary-hover:
+    textColor: "{colors.on-primary}"
+    backgroundColor: "{colors.primary}"
+```
+
+## Examples
+
+Reference snippets in the system's voice. Use these to calibrate brand
+tone in headlines, CTAs, and error states; do not copy verbatim into
+production surfaces.
+
+### Hero
+
+- **HE**: הסיפור המלא.
+- **EN**: The story, in full.
+
+### Primary CTA
+
+- **HE**: קראו עוד
+- **EN**: Read on
+
+### Error message
+
+- **HE**: הכתבה לא נמצאה. נסו את החדשות האחרונות.
+- **EN**: Article not found. Try our latest.
