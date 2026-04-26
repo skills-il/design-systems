@@ -1,6 +1,6 @@
 ---
 name: Friday Dusk
-version: 0.2.1
+version: 0.2.2
 description: Friday-night candlelight, Hebrew-first. Deep plum surface, candle ivory ink, warm amber accent. Intimate, ceremonial, dim.
 colors:
   primary: "#FBE9C7"
@@ -298,5 +298,5 @@ production surfaces.
 
 ### Error message
 
-- **HE**: לא הצלחנו לטעון. נסו רשת שקטה יותר.
+- **HE**: לא הצלחנו לטעון. נסו רשת חזקה יותר.
 - **EN**: Could not load. Try a quieter network.

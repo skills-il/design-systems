@@ -1,6 +1,6 @@
 ---
 name: Headlines
-version: 0.1.1
+version: 0.1.2
 description: Dense Israeli news-portal. Saturated red CTA, hairline rules, square corners.
 ---
 
@@ -153,5 +153,5 @@ production surfaces.
 
 ### Error message
 
-- **HE**: הכתבה כבר לא בעדכון. עברו לפיד החי.
+- **HE**: הכתבה כבר לא מתעדכנת. עברו לפיד החי.
 - **EN**: This story has expired. See the live feed.

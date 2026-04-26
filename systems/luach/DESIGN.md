@@ -1,6 +1,6 @@
 ---
 name: Bulletin
-version: 0.1.1
+version: 0.1.2
 description: Israeli classifieds utilitarian. Yellow-cream paper, ultra-dense list rows, square corners, prices in red.
 ---
 
@@ -149,5 +149,5 @@ production surfaces.
 
 ### Error message
 
-- **HE**: המודעה הוסרה ע״י המפרסם.
+- **HE**: המפרסם הסיר את המודעה.
 - **EN**: Listing removed by owner.

@@ -1,6 +1,6 @@
 ---
 name: Bauhaus
-version: 0.2.1
+version: 0.2.2
 description: White City modernism, Hebrew-first. Cream paper, black ink, single red ochre accent. Authoritative, quiet, civic.
 colors:
   primary: "#1A1A18"
@@ -302,5 +302,5 @@ production surfaces.
 
 ### Error message
 
-- **HE**: שדה חובה. אנא מלאו אותו.
+- **HE**: שדה חובה. נא למלא.
 - **EN**: Required field. Please fill it in.
