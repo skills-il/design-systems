@@ -1,0 +1,23 @@
+{
+  "slug": "memshala",
+  "name_he": "ממשלה",
+  "name_en": "Civic",
+  "tagline_he": "ממשלתי בלי להיות מסורבל. WCAG כברירת מחדל.",
+  "tagline_en": "Civic without bureaucracy. WCAG by default.",
+  "mood": [
+    "accessible",
+    "trustworthy",
+    "modern",
+    "civic"
+  ],
+  "category": "institutional",
+  "dark_capable": true,
+  "fonts_used": [
+    "Assistant"
+  ],
+  "author": {
+    "name": "Agent Skills Israel",
+    "github": "skills-il"
+  },
+  "version": "0.1.0"
+}

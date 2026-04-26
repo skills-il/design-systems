@@ -1,0 +1,23 @@
+{
+  "slug": "luach",
+  "name_he": "לוח",
+  "name_en": "Bulletin",
+  "tagline_he": "דירה, רכב, ריהוט. הכול בשורה אחת.",
+  "tagline_en": "Apartment, car, furniture. Everything in one row.",
+  "mood": [
+    "utilitarian",
+    "classifieds",
+    "dense",
+    "pragmatic"
+  ],
+  "category": "utility",
+  "dark_capable": true,
+  "fonts_used": [
+    "Heebo"
+  ],
+  "author": {
+    "name": "Agent Skills Israel",
+    "github": "skills-il"
+  },
+  "version": "0.1.0"
+}

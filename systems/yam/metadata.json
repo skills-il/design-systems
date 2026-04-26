@@ -1,0 +1,24 @@
+{
+  "slug": "yam",
+  "name_he": "ים",
+  "name_en": "Coast",
+  "tagline_he": "ים, חול, אור עצמות. לבן עיר חוף.",
+  "tagline_en": "Sea, sand, bone-white. Coastal city light.",
+  "mood": [
+    "coastal",
+    "mediterranean",
+    "airy",
+    "editorial"
+  ],
+  "category": "editorial",
+  "dark_capable": true,
+  "fonts_used": [
+    "Frank Ruhl Libre",
+    "Heebo"
+  ],
+  "author": {
+    "name": "Agent Skills Israel",
+    "github": "skills-il"
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "kotarot",
+  "name_he": "כותרות",
+  "name_en": "Headlines",
+  "tagline_he": "כותרות שזזות. דחיפות בכל פיקסל.",
+  "tagline_en": "Headlines that move. Urgency in every pixel.",
+  "mood": [
+    "urgent",
+    "dense",
+    "breaking",
+    "editorial"
+  ],
+  "category": "editorial",
+  "dark_capable": true,
+  "fonts_used": [
+    "Heebo"
+  ],
+  "author": {
+    "name": "Agent Skills Israel",
+    "github": "skills-il"
+  },
+  "version": "0.1.0"
+}
